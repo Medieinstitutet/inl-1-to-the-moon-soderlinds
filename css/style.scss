@@ -1,0 +1,396 @@
+
+body {
+    background-color: #000000;
+    font-family: rubik;
+}
+
+.full-height {
+    min-height: 100vh;
+
+}
+
+
+/* ------------------------------------------------ */
+/* ------------------------ NAV ------------------- */
+/* ------------------------------------------------ */
+.nav {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 0;
+    position: fixed;
+    top: 20px;
+    right: 40px; 
+    z-index: 3;
+    pointer-events: none;
+    }
+
+.nav span {
+    width: 55px;
+    height: 6px;
+    margin-bottom: 7px;
+    border-radius: 3px;
+    background-color: black;
+    display: block;
+    }
+
+
+input {
+        position:fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+        width: 35px;
+        height: 35px;
+        opacity: 0;
+    }
+
+    .menu .nav span:nth-child(2) {
+        margin-left: -3px;
+    }
+
+
+input:checked + .menu .nav span {
+        display: block;
+        transition: all 0.3s ease-in-out;
+    }
+
+    input:checked + .menu .nav span:nth-child(2) {
+      margin-left: 0px;
+  }
+
+nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        visibility: hidden;
+        z-index:1;
+
+    }
+
+input:checked + .menu nav {
+    visibility: visible;
+    opacity: 1;
+    }
+
+ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+li {
+    font-size: 3em;
+}
+
+.menu1 {
+    text-shadow: 1px 1px #969696;
+    font-weight: bold;
+    font-size: 3em;
+
+}
+
+
+/* ------------------------------------------------ */
+/* ------------------------ ASTRONAUT ------------- */
+/* ------------------------------------------------ */
+.astronaut {
+    background-image: url('../img/astronaut.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.astronaut .heading-box {
+    border: 4px solid black;
+    width: 10rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.astronaut .heading-box .text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    
+}
+
+.scroll {
+  position: absolute;
+  bottom: 1%;
+  left: 50%
+  
+}
+
+.arrow {
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    color: #ffffff;
+}
+/* ------------------------------------------------ */
+/* ------------------------ DEL 2 ----------------- */
+/* ------------------------------------------------ */
+
+
+.text-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../img/space.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    align-items: center;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    padding-top: 50px;
+  }
+
+
+  .flexbox .flexbox_1 {
+    position: relative;
+    margin-left: 70px;
+    font-size: 2.3rem; 
+    z-index: 1;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+  }
+
+
+  .flexbox .flexbox_2 {
+    margin-left: 100px;
+    margin-top: -200px;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+
+  .flexbox .flexbox_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 30px;
+  }
+
+  .flexbox .flexbox_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+  }
+
+  .flexbox .flexbox_5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    margin-left: 30px;
+  }
+
+  .flexbox .flexbox_6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 30px;
+  }
+ 
+ 
+
+  h1 {
+    color: rgb(255, 255, 255)
+  }
+  
+  h2 {
+    color: rgb(192, 188, 188, 0.8)
+  }
+
+  h3 {
+    font-size: 1.8em;
+    color: rgb(255, 255, 255)
+  }
+
+article {
+    font-size: 0.8em;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+      line-height: 20px;
+  }
+
+.pinklink {
+        color: #d100a1;
+        font-size: 0.8em;
+        text-decoration: underline
+        
+      }    
+
+.pinklink2 {
+    text-decoration: none;
+}
+
+blockquote  {
+        font-size: 1.2em;
+        font-weight: lighter;
+        font-style: italic;
+        color: rgb(255, 255, 255)
+        
+    }
+
+/* ------------------------------------------------ */
+/* ------------------------ FOOTER----------------- */
+/* ------------------------------------------------ */
+
+footer {
+
+    display: block;
+    padding: 20px;
+    background-color: rgb(8, 2, 29);
+    color: white;
+   
+    
+  }
+
+
+  .footer {
+    color: #d100a1;
+    font-size: 0.7em;
+    
+  } 
+
+  .accept_button {
+      float: right;
+      background-color: #2c2288; 
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    
+
+  }
+
+/* ------------------------------------------------ */
+/* ------------------------ DESKTOP --------------- */
+/* ------------------------------------------------ */
+
+@media screen and (min-width: 800px) {
+    .astronaut .heading-box {
+        width: 15rem;
+    }
+    .astronaut .heading-box .link {
+        text-align: right;
+    }
+
+    .astronaut .heading-box .link span {
+        position: relative;
+        left: 0px;
+        transition: left 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    .astronaut .heading-box .link:hover span {
+        left: 10px;
+    }
+
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+    .flexbox {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        padding-top: 50px;
+        
+      }
+    
+    
+      .flexbox .flexbox_1 {
+        position: relative;
+        font-size: 3.8rem; 
+        z-index: 1;
+        text-shadow: 2px 2px #000000;
+        font-weight: bold;
+        margin-top: -50px;
+    
+      }
+    
+    
+      .flexbox .flexbox_2 {
+        margin-top: -300px;
+        font-size: 6rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+       
+        
+        
+      }
+      .flexbox .flexbox_3 {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 100px;
+        margin-top: -50px;
+        width: 500px;
+      }
+    
+      .flexbox .flexbox_4 {
+        
+        justify-content: left;
+        position: relative;
+        left: -20%;
+        
+      }
+    
+      .flexbox .flexbox_5 {
+        display: flex;
+        flex-direction: column;
+        margin-top: -20%;
+        margin-left: 60%;
+        
+      }
+
+   
+
+    article {
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    blockquote {
+      font-size: 26px;
+    }
+}
+
+
+
+/* ------------------------------------------------ */
+/* ------------------------ DARK MODE ------------- */
+/* ------------------------------------------------ */
+@media (prefers-color-scheme: dark) {
+    .astronaut .heading-box .link {
+        color: red;
+    }
+}
