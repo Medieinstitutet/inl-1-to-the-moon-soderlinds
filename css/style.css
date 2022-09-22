@@ -444,17 +444,13 @@ footer {
       font-size: 26px;
     }
 
-
     .quote_big {
       font-size: 42px;
       background-image: linear-gradient(to right bottom, #d100a1, #ffffff ,#d100a1);
-      background-clip: text;
-      color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       opacity: 0.5;
-      
     }
-
-    
 
 }
 
