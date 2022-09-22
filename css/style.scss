@@ -97,8 +97,8 @@ li {
     text-shadow: 1px 1px #969696;
     font-weight: bold;
     font-size: 3em;
-
 }
+
 
 
 
@@ -237,6 +237,28 @@ li {
     color: rgb(255, 255, 255)
   }
 
+  blockquote:before {
+      content: '\201c';
+      font-size: 120px;
+      font-family: 'Times New Roman', Times, serif;
+      position: absolute;
+      margin-left: -55px;
+      margin-top: -40px;
+      color: rgb(192, 188, 188, 0.6);
+      z-index: 1;
+    }
+
+    blockquote:after {
+      content: '\201d';
+      font-size: 120px;
+      font-family: 'Times New Roman', Times, serif;
+      position: absolute;
+      margin-right: -55px;
+      margin-top: -40px;
+      color: rgb(192, 188, 188, 0.6);
+      z-index: 1;
+    }
+
 article {
     font-size: 0.8em;
     color: rgb(255, 255, 255);
@@ -261,6 +283,7 @@ blockquote  {
     color: rgb(255, 255, 255)  
     }
 
+    
 /* ------------------------------------------------ */
 /* ------------------------ FOOTER----------------- */
 /* ------------------------------------------------ */
@@ -292,8 +315,6 @@ footer {
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
-    
-
   }
 
 /* ------------------------------------------------ */
@@ -302,10 +323,19 @@ footer {
 
 @media screen and (min-width: 800px) {
     .astronaut .heading-box {
-        width: 15rem;
+        width: 30rem;
+        height: 30rem;
     }
+
+    .astronaut .heading-box .text{
+      font-size: 7em;
+      margin-top: 70px;
+      font-weight: bolder;
+    }
+
     .astronaut .heading-box .link {
         text-align: right;
+       margin-top: 100px;
     }
 
     .astronaut .heading-box .link span {
@@ -324,6 +354,14 @@ footer {
         top: 15px;
         right: 35px;
     }
+
+    .menu1:hover {
+      text-decoration: underline;
+      text-decoration-color: #d100a1;
+      text-decoration-thickness: 8px;
+     
+      }
+      
     .flexbox {
         display: flex;
         flex-direction: column;
@@ -347,10 +385,7 @@ footer {
         margin-top: -300px;
         font-size: 6rem;
         font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-       
-        
-        
+        font-weight: bold; 
     }
       .flexbox .flexbox_3 {
         
@@ -397,6 +432,8 @@ footer {
         margin-top: -50%;
     }
    
+    .mobile-break { display: none; 
+    }
 
     article {
       font-size: 18px;
@@ -407,12 +444,18 @@ footer {
       font-size: 26px;
     }
 
+
     .quote_big {
       font-size: 42px;
-      background-image: linear-gradient(to right bottom, #4c3a44, #51434f, #60606d, #51434f, #4c3a44);
+      background-image: linear-gradient(to right bottom, #d100a1, #ffffff ,#d100a1);
       background-clip: text;
       color: transparent;
+      opacity: 0.5;
+      
     }
+
+    
+
 }
 
 
